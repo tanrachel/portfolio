@@ -7,10 +7,11 @@ app.use(bodyParser.urlencoded({extended: true}));
 // app.use(express.static("public"));
 app.set('views', __dirname + '/views');
 app.engine('html', require('ejs').renderFile);
+app.use(express.static('public'));
 // app.set("view engine", "ejs");
 // routes-----------------------------------------------------------
 app.get("/",function(req,res){
-	res.render("./static/home/home.html");
+	res.render("./home.html");
 }) ;
 
 
