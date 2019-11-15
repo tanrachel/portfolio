@@ -1,5 +1,19 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto:400';
-
+#resume {
+	position: relative;
+	z-index: 15;
+	/* top: 20%;
+	left: 50%; */
+	float:left;
+	margin: -100px 0 0 -150px;
+	padding: 10px 30px 10px 30px;
+    border-radius:15px;
+	background: white;
+	font-family: 'Open Sans';
+	font-weight: 300;
+	text-align: center;
+	letter-spacing: 3px;
+}
 body {
     width: 100vw;
     height: 100vh;
@@ -15,7 +29,7 @@ body {
 }
 
 
-div.absolute-center {
+/* div.absolute-center {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -26,13 +40,20 @@ div.absolute-center {
     
     transition: all .5s;
 }
-
+ */
 #welcome {
+	z-index: 15;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+	
     padding: 10px 30px 10px 30px;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     border-radius:15px;
     background: rgba(255, 255, 255, 1);
-    box-shadow: 0 0 5px 0 black;
+    /* box-shadow: 0 0 5px 0 black; */
     
     font-family: 'Open Sans';
     font-weight: 300;
