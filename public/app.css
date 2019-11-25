@@ -1,0 +1,9 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto:400';
+.navbar-custom {
+    background-color: #404040;
+    font-family: 'Open Sans';
+}
+
+.skills {
+    background-color:#808080;
+}

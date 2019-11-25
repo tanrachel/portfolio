@@ -15,7 +15,7 @@ app.get("/",function(req,res){
 }) ;
 
 app.get("/resume",function(req,res){
-	res.render("./resume.html");
+	res.render("./resume.ejs");
 })
 
 

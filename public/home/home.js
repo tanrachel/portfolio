@@ -22,7 +22,8 @@ var layers = {
     coef: [0.1, 0.2, 0.4, 0.6, 0.8], //how much the letters move from the mouse (starting from the deepest layer)
     size: [30,25,20,15,10], //font size of the letters (starting from the deepest layer)
     color: ['#fff', '#eee', '#ccc', '#bbb', '#aaa'], //color of the letters (starting from the deepest layer)
-    font: 'Courier' //font family (of every layer)
+    font: 'Open Sans'
+    // font: 'Courier' //font family (of every layer)
 };
 
 /*End of options*/
