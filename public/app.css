@@ -3,7 +3,34 @@
     background-color: #404040;
     font-family: 'Open Sans';
 }
-
+.body { 
+	font-family: 'Open Sans';
+}
+.content {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .skills {
     background-color:#808080;
+	padding: 1%;
+	color: white
+}
+
+li {
+	list-style-type: none;
+	padding: 5px 0px; 
+}
+
+.experience {
+	padding: 1%;
+	border:1px solid #404040;
+}
+.space { 
+	padding:1%
 }

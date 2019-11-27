@@ -1,20 +1,37 @@
 <% include ./partials/header %>
-<section class="container-fluid px-0">
-    <div class="row align-items-center content">
-        <div class="col-md-6 order-2 order-md-1 skills">
-            <h2>Skills </h2>
+<section class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-md-6 order-md-2 order-2 skills content">
+			<li>SQL</li>
+			<li>Tableau</li>
+			<li>Excel</li>
+			<li>Python</li>
         </div>
-        <div class="col-md-6 text-center order-1 order-md-2">
-            <div class="row justify-content-center">
-                <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
-                <h2>Analyst</h2>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.</p>
-                </div>
-            </div>
+        <div class="col-md-6 order-md-1 order-1 experience content">
+			<h2>Analyst</h2>
+			<ul>
+				<li> Develop and automate reports, iteratively build and prototype dashboards to provide insights at scale, solving for cross business merchandise and marketing priorities</li>
+				<li> Collaborate with cross-functional stakeholders to formulate and complete a full cycle analysis, including data mining, data analysis and adata visualizations to deliver findings and presentations impacting strategy and operations</li>
+				<li> Set up AB and MV tests and conduct post test analysis</li>
+			</ul>
+
         </div>
     </div>
+
+	<div class="row justify-content-center">
+		<div class="col-md-6 order-md-1 order-2 skills content">
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>Javascript</li>
+		</div>
+		<div class="col-md-6 order-md-2 order-1 experience content">
+			<h2>Web Developer</h2>
+			<ul>
+				<li>Set up server in NodeJS to serve web application to serve dynamic pages from MongoDB with user authentication and permissions with PassportJS</li>
+				<li>Create static and dynamic web applications with EJS and BootStrap 4</li>
+			</ul>
+
+		</div>
+	</div>
 </section>
 <% include ./partials/footer %>
