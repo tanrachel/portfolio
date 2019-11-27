@@ -8,12 +8,10 @@ canvas.height = document.body.clientHeight;
 
 var ctx = canvas.getContext('2d');
 
-
-
 /*Modify options here*/
 
 //possible characters that will appear
-var characterList = ['Welcome','to',"Rachel's","Website", "!"];
+var characterList = ["\uf005"];
 
 //stocks possible character attributes
 var layers = {
@@ -22,7 +20,8 @@ var layers = {
     coef: [0.1, 0.2, 0.4, 0.6, 0.8], //how much the letters move from the mouse (starting from the deepest layer)
     size: [30,25,20,15,10], //font size of the letters (starting from the deepest layer)
     color: ['#fff', '#eee', '#ccc', '#bbb', '#aaa'], //color of the letters (starting from the deepest layer)
-    font: 'Open Sans'
+	font: 'Font Awesome 5 Free'
+    // font: 'Open Sans'
     // font: 'Courier' //font family (of every layer)
 };
 
@@ -48,7 +47,8 @@ var rnd = {
 /*LETTER DRAWING*/
 
 function drawLetter(char) {
-    ctx.font = char.size + 'px ' + char.font;
+	ctx.font = '900 14px "Font Awesome 5 Free"'
+	// ctx.font = char.size + 'px ' + char.font;
     ctx.fillStyle = char.color;
     
     var x = char.posX + (mouseX-canvas.width/2)*char.coef;
@@ -200,3 +200,4 @@ function animate() {
 
 // And get it started by calling animate().
 animate();
+
