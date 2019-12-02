@@ -1,41 +1,31 @@
 <% include ./partials/header %>
-<form action="/contactme" id="contact-form" method="post" role="form">
-  <fieldset>
-    <label for="name">Name</label>
-    <input 
-      id="name" 
-      name="name" 
-      type="text" 
-      placeholder="Your name" 
-      required>
+<div class = "container">
+	<h1 style ="text-align:center;margin-top:20px "> Contact Me </h1>
+	<div style = "width:80%; margin: 25px auto;">
+		<form action="/contactme" method="post">
+			<div class = "form-group">
+				<label for="name">Name</label>
+				<input  class= "form-control"  name="name" type="text" placeholder="Your Name" required>
+			</div>
 
-    <label for="email">Email</label>
-    <input 
-      id="email" 
-      name="email" 
-      type="text" 
-      placeholder="Your email" 
-      required>
-	  
-	<label for="title">Email Tile</label>
-    <input 
-      id="title" 
-      name="title" 
-      type="text" 
-      placeholder="Email Title" 
-      required>
+			<div class = "form-group">
+				<label for="email">Email</label>
+				<input class ="form-control" name="email" type="text" placeholder="Your Email" required>
+			</div>
+			
+			<div class = "form-group">
+				<label for="title">Email Subject</label>
+				<input class ="form-control" name="title" type="text" placeholder="Email Subject" required>
+			</div>
 
-    <label for="message">Message</label>
-    <textarea 
-      id="message" 
-      name="message" 
-      placeholder="Enter your message here" 
-      rows="3" 
-      required>
-    </textarea>
+			<div class = "form-group">			
+				<label for="message">Message</label>
+				<textarea class ="form-control" name="message" placeholder="Enter your message here" rows="5" required>
+				</textarea>
+			</div>
 
-    <button type="submit">Submit</button>
-  </fieldset>
-</form>
-
+			<button type="submit">Submit</button>
+		</form>
+	</div>
+</div>
 <% include ./partials/footer %>

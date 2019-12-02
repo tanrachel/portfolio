@@ -19,7 +19,7 @@
 .skills {
     background-color:#808080;
 	padding: 1%;
-	color: white
+	color: white;
 }
 
 li {
@@ -29,6 +29,7 @@ li {
 
 .experience {
 	padding: 1%;
+	height:100vh;
 	/* border:1px solid #404040; */
 }
 .space { 
@@ -50,7 +51,9 @@ li > a:hover {
 	padding: 1em 1.5em;
 	text-transform: uppercase;
 }
-
+.container-fluid { 
+	margin-bottom:60px;
+}
 footer {
 	position: absolute;
 	bottom: 0;
